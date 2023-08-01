@@ -4,8 +4,9 @@ const express = require('express');
 
 const app = express();
 app.use((req, res, next) => {
-  console.log("Hello World!");
-  next();
+    console.log("hello Word!")
+    res.send("hello Word!");
+    //next();
 })
 
 const PORT = process.env.PORT || 3000;
